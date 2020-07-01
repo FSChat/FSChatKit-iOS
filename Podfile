@@ -9,7 +9,8 @@ target 'FSChatKit' do
 
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
-  
+  pod 'Firebase/Core'
+   
   target 'FSChatKitTests' do
     # Pods for testing
   end

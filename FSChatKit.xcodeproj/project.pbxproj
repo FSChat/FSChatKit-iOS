@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,12 @@
 		180D4BD624ACD7E10008AB15 /* FSChatKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180D4BCC24ACD7E00008AB15 /* FSChatKit.framework */; };
 		180D4BDB24ACD7E10008AB15 /* FSChatKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4BDA24ACD7E10008AB15 /* FSChatKitTests.swift */; };
 		180D4BDD24ACD7E10008AB15 /* FSChatKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 180D4BCF24ACD7E00008AB15 /* FSChatKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		180D4BEC24ACD9BC0008AB15 /* FSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4BEB24ACD9BC0008AB15 /* FSUser.swift */; };
+		180D4BF024ACDA820008AB15 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4BED24ACDA800008AB15 /* Channel.swift */; };
+		180D4BF124ACDA820008AB15 /* DatabaseRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4BEE24ACDA820008AB15 /* DatabaseRepresentation.swift */; };
+		180D4BF424ACDAE60008AB15 /* OppositeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4BF324ACDAE60008AB15 /* OppositeUser.swift */; };
+		180D4BF724ACDB070008AB15 /* OneToOneRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4BF624ACDB070008AB15 /* OneToOneRoom.swift */; };
+		180D4BF924ACDB290008AB15 /* LastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4BF824ACDB290008AB15 /* LastMessage.swift */; };
 		622C265742035185C27960B8 /* Pods_FSChatKit_FSChatKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16AE7ECF36DECC4ACEABF37 /* Pods_FSChatKit_FSChatKitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +38,12 @@
 		180D4BD524ACD7E10008AB15 /* FSChatKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSChatKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180D4BDA24ACD7E10008AB15 /* FSChatKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSChatKitTests.swift; sourceTree = "<group>"; };
 		180D4BDC24ACD7E10008AB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180D4BEB24ACD9BC0008AB15 /* FSUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSUser.swift; sourceTree = "<group>"; };
+		180D4BED24ACDA800008AB15 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		180D4BEE24ACDA820008AB15 /* DatabaseRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseRepresentation.swift; sourceTree = "<group>"; };
+		180D4BF324ACDAE60008AB15 /* OppositeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppositeUser.swift; sourceTree = "<group>"; };
+		180D4BF624ACDB070008AB15 /* OneToOneRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneToOneRoom.swift; sourceTree = "<group>"; };
+		180D4BF824ACDB290008AB15 /* LastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastMessage.swift; sourceTree = "<group>"; };
 		20D37BCFF53F3A1A3581D1D0 /* Pods_FSChatKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSChatKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		649CD75E90DFFCE0005DDABD /* Pods-FSChatKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSChatKit.release.xcconfig"; path = "Target Support Files/Pods-FSChatKit/Pods-FSChatKit.release.xcconfig"; sourceTree = "<group>"; };
 		68B0B96EF99E3C4F5D506B9E /* Pods-FSChatKit-FSChatKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSChatKit-FSChatKitTests.release.xcconfig"; path = "Target Support Files/Pods-FSChatKit-FSChatKitTests/Pods-FSChatKit-FSChatKitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +130,12 @@
 		180D4BE824ACD8710008AB15 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				180D4BED24ACDA800008AB15 /* Channel.swift */,
+				180D4BEE24ACDA820008AB15 /* DatabaseRepresentation.swift */,
+				180D4BEB24ACD9BC0008AB15 /* FSUser.swift */,
+				180D4BF324ACDAE60008AB15 /* OppositeUser.swift */,
+				180D4BF624ACDB070008AB15 /* OneToOneRoom.swift */,
+				180D4BF824ACDB290008AB15 /* LastMessage.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -183,6 +201,7 @@
 				180D4BD124ACD7E10008AB15 /* Sources */,
 				180D4BD224ACD7E10008AB15 /* Frameworks */,
 				180D4BD324ACD7E10008AB15 /* Resources */,
+				111831576819B4BE50721BDC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +269,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		111831576819B4BE50721BDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSChatKit-FSChatKitTests/Pods-FSChatKit-FSChatKitTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FSChatKit-FSChatKitTests/Pods-FSChatKit-FSChatKitTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FSChatKit-FSChatKitTests/Pods-FSChatKit-FSChatKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9569FD5ACDA0139616654B81 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,6 +337,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180D4BF124ACDA820008AB15 /* DatabaseRepresentation.swift in Sources */,
+				180D4BEC24ACD9BC0008AB15 /* FSUser.swift in Sources */,
+				180D4BF024ACDA820008AB15 /* Channel.swift in Sources */,
+				180D4BF924ACDB290008AB15 /* LastMessage.swift in Sources */,
+				180D4BF724ACDB070008AB15 /* OneToOneRoom.swift in Sources */,
+				180D4BF424ACDAE60008AB15 /* OppositeUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05B52927E3AC7FD34AE354E0 /* Pods-FSChatKit-FSChatKitTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FSChatKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -520,6 +563,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 68B0B96EF99E3C4F5D506B9E /* Pods-FSChatKit-FSChatKitTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FSChatKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
