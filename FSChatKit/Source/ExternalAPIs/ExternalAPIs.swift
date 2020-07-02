@@ -8,17 +8,17 @@
 
 import Foundation
 
-typealias FSCKStatusCode = Int
+public typealias FSCKStatusCode = Int
 
 public protocol ExternalAPIs {
     
-    public func setChatUser(
+    func setChatUser(
          firebaseID: String,
          completion: @escaping (
          _ result: Swift.Result<Bool, Error>,
          _ statusCode: FSCKStatusCode?) -> Void)
     
-    public func getChatUser(
+    func getChatUser(
           userID: String,
           completion: @escaping (
           _ result: Swift.Result<Bool, Error>,
