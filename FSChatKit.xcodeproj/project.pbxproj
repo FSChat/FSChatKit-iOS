@@ -17,6 +17,11 @@
 		180D4BF424ACDAE60008AB15 /* OppositeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4BF324ACDAE60008AB15 /* OppositeUser.swift */; };
 		180D4BF724ACDB070008AB15 /* OneToOneRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4BF624ACDB070008AB15 /* OneToOneRoom.swift */; };
 		180D4BF924ACDB290008AB15 /* LastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4BF824ACDB290008AB15 /* LastMessage.swift */; };
+		180D4BFF24ACDE860008AB15 /* FirebaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4BFE24ACDE860008AB15 /* FirebaseConstants.swift */; };
+		180D4C0124ACDECF0008AB15 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4C0024ACDECF0008AB15 /* ChatManager.swift */; };
+		180D4C0324ACDF1D0008AB15 /* ExternalAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4C0224ACDF1D0008AB15 /* ExternalAPIs.swift */; };
+		180D4C0624ACE00E0008AB15 /* AppUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4C0524ACE00E0008AB15 /* AppUserProfile.swift */; };
+		180D4C0924ACE78E0008AB15 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4C0824ACE78E0008AB15 /* Dictionary.swift */; };
 		622C265742035185C27960B8 /* Pods_FSChatKit_FSChatKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16AE7ECF36DECC4ACEABF37 /* Pods_FSChatKit_FSChatKitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +49,11 @@
 		180D4BF324ACDAE60008AB15 /* OppositeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppositeUser.swift; sourceTree = "<group>"; };
 		180D4BF624ACDB070008AB15 /* OneToOneRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneToOneRoom.swift; sourceTree = "<group>"; };
 		180D4BF824ACDB290008AB15 /* LastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastMessage.swift; sourceTree = "<group>"; };
+		180D4BFE24ACDE860008AB15 /* FirebaseConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseConstants.swift; sourceTree = "<group>"; };
+		180D4C0024ACDECF0008AB15 /* ChatManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
+		180D4C0224ACDF1D0008AB15 /* ExternalAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalAPIs.swift; sourceTree = "<group>"; };
+		180D4C0524ACE00E0008AB15 /* AppUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserProfile.swift; sourceTree = "<group>"; };
+		180D4C0824ACE78E0008AB15 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		20D37BCFF53F3A1A3581D1D0 /* Pods_FSChatKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSChatKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		649CD75E90DFFCE0005DDABD /* Pods-FSChatKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSChatKit.release.xcconfig"; path = "Target Support Files/Pods-FSChatKit/Pods-FSChatKit.release.xcconfig"; sourceTree = "<group>"; };
 		68B0B96EF99E3C4F5D506B9E /* Pods-FSChatKit-FSChatKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSChatKit-FSChatKitTests.release.xcconfig"; path = "Target Support Files/Pods-FSChatKit-FSChatKitTests/Pods-FSChatKit-FSChatKitTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +124,10 @@
 		180D4BE624ACD8360008AB15 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				180D4C0724ACE77E0008AB15 /* Extensions */,
+				180D4C0424ACDFFF0008AB15 /* Protocals */,
+				180D4BFD24ACDE760008AB15 /* Constants */,
+				180D4BFA24ACDDBD0008AB15 /* ExternalAPIs */,
 				180D4BE824ACD8710008AB15 /* Entity */,
 				180D4BE724ACD86A0008AB15 /* ChatManager */,
 			);
@@ -123,6 +137,7 @@
 		180D4BE724ACD86A0008AB15 /* ChatManager */ = {
 			isa = PBXGroup;
 			children = (
+				180D4C0024ACDECF0008AB15 /* ChatManager.swift */,
 			);
 			path = ChatManager;
 			sourceTree = "<group>";
@@ -138,6 +153,38 @@
 				180D4BF824ACDB290008AB15 /* LastMessage.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		180D4BFA24ACDDBD0008AB15 /* ExternalAPIs */ = {
+			isa = PBXGroup;
+			children = (
+				180D4C0224ACDF1D0008AB15 /* ExternalAPIs.swift */,
+			);
+			path = ExternalAPIs;
+			sourceTree = "<group>";
+		};
+		180D4BFD24ACDE760008AB15 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				180D4BFE24ACDE860008AB15 /* FirebaseConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		180D4C0424ACDFFF0008AB15 /* Protocals */ = {
+			isa = PBXGroup;
+			children = (
+				180D4C0524ACE00E0008AB15 /* AppUserProfile.swift */,
+			);
+			path = Protocals;
+			sourceTree = "<group>";
+		};
+		180D4C0724ACE77E0008AB15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				180D4C0824ACE78E0008AB15 /* Dictionary.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		AF2E845661B06C9D8B024C1F /* Frameworks */ = {
@@ -341,8 +388,13 @@
 				180D4BEC24ACD9BC0008AB15 /* FSUser.swift in Sources */,
 				180D4BF024ACDA820008AB15 /* Channel.swift in Sources */,
 				180D4BF924ACDB290008AB15 /* LastMessage.swift in Sources */,
+				180D4C0924ACE78E0008AB15 /* Dictionary.swift in Sources */,
+				180D4C0624ACE00E0008AB15 /* AppUserProfile.swift in Sources */,
 				180D4BF724ACDB070008AB15 /* OneToOneRoom.swift in Sources */,
 				180D4BF424ACDAE60008AB15 /* OppositeUser.swift in Sources */,
+				180D4C0324ACDF1D0008AB15 /* ExternalAPIs.swift in Sources */,
+				180D4BFF24ACDE860008AB15 /* FirebaseConstants.swift in Sources */,
+				180D4C0124ACDECF0008AB15 /* ChatManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

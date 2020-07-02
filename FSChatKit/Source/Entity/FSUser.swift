@@ -124,4 +124,16 @@ extension FSUser {
                     "name": oppositeName ?? "" ]
         ]
     }
+    
+    static func chatRoomForOppositeUsers(users:[RoomUser]) -> [String: Any] {
+        
+        var oppositeUsers = [String:String]()
+        for user in users {
+            oppositeUsers[user.uid] = user.name.trimmingCharacters(in: .whitespaces)
+        }
+        
+        return [ "seen": false,
+                 "opposite_users": oppositeUsers,
+        ]
+    }
 }
